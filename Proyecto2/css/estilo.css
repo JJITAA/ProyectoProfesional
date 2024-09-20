@@ -1,0 +1,223 @@
+:root{
+    --padding-container:100px 0;
+    --color-title:rgb(238, 228, 228);
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 255, 255);
+}
+.hero::before{
+    margin: 0px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,#ffffffcc 0%,#0503038c 100%),url('../img/pexels-lukas-rodriguez-1845331-15913242.jpg');
+background-size: cover;
+clip-path: polygon(0 0,100% 0,100% 80%, 50% 95%,0 80%);
+z-index: -1;
+}
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav_title{
+font-weight: 300;
+}
+.nav_link{
+margin-left: auto;
+padding: 0;
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: max-content;
+gap: 2em;
+}
+.navitems{
+    color: black;
+    list-style: none;
+    text-align: center;
+}
+.nav_link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.nav_menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav_img{
+    display: var(--show,none);
+    width: 30px;
+}
+.hero_title{
+    font-size: 3rem;
+}
+.hero_title{
+    margin-bottom: 20px;
+}
+.hero_paragraph{
+    margin-bottom: 20px;
+}
+
+.about{
+    text-align: center;
+}
+.subtitle{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.about_paragraph{
+    line-height: 1.7;
+}
+.about_main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+}
+.about_iconos{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 100%;
+    max-width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.hero_container_{
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+.cta{
+    position: absolute;
+    display: inline-block;
+    background-color: aqua;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: 13px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.nav_title2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+.knowledge{
+    background-color: rgba(151, 239, 255, 0.479);
+    width: auto;
+    background-position: center;
+    align-items: center;
+}
+.knowledge_picture{
+text-align: center;
+}
+.cta2{
+    display: inline-block;
+    justify-self: center;
+    position: relative;
+    z-index: 10; /* Asegúrate de que el z-index sea mayor que el de las imágenes */
+    background-color: #ffffff; /* Cambia el color según sea necesario */
+    color: rgb(211, 15, 15);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;   
+}
+.knowledge_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+.knowledge_picture{
+    max-width: 500px;
+}
+.knowledge_paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.knowledge_img{
+    width: 100%;
+    display: block;
+}
+.price_container {
+    padding: var(--padding-container);
+    text-align: center;
+    background-color: rgba(209, 188, 67, 0.9);
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.price_table {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em  ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-evenly;
+    align-items: center;
+}
+.price_element{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color_plan:#696871;
+    --color_price:#1D293F;
+    --bg-cta:#fff;
+    --color_cta:#5454D4;
+}   
+.price_container {
+    padding: var(--padding-container);
+    text-align: center;
+}
+
+.price_table {
+    display: flex; /* Utiliza flexbox para alinear los elementos en una fila */
+    justify-content: space-around; /* Espacio uniforme entre los elementos */
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+}
+
+.price_element {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px; /* Margen entre los elementos */
+    flex: 1; /* Cada elemento tomará el mismo espacio */
+    max-width: 300px; /* Limita el ancho de cada elemento */
+}

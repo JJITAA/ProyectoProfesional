@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Inicio</title>
+    <style>
+        /* Asegúrate de que la hero_container_ tenga posición relativa */
+        .hero_container_ {
+            position: relative;
+        }
+        .hero_title{
+            position: relative;
+        }
+
+        /* Estilo para el enlace CTA */
+        .cta {
+            position: relative;
+            z-index: 10; /* Asegúrate de que el z-index sea mayor que el de las imágenes */
+            background-color: #007BFF; /* Cambia el color según sea necesario */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Asegúrate de que las imágenes tengan un z-index menor */
+        .about_iconos img {
+            position: relative;
+            z-index: -1; /* Menor que el z-index del enlace CTA */
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav_container">
+            <div class="navlogo">
+                <h2 class="nav_title2">TechnoWordl</h2>
+            </div>
+            <ul class="navlinkmenu">
+                <li class="navitems">
+                    <a href="" class="nav_link">Inicio</a>
+                </li>
+                <li class="navitems">
+                    <a href="" class="nav_link">Acerca de</a>
+                </li>
+                <li class="navitems">
+                    <a href="" class="nav_link">Contacto</a>
+                </li>
+                <li class="navitems">
+                    <a href="" class="nav_link">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="hero_container_">
+            <h1 class="hero_title">Venta y Compra de Computadoras</h1>
+            <p class="hero_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deleniti excepturi quidem aut sint. Temporibus, in! Tempora atque impedit a veniam omnis laboriosam quae assumenda qui, eaque eius rem odit.</p>
+            <a href="" class="cta">Comienza Ahora</a>
+        </section>
+    </header>
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Qué aprenderás en este curso?</h2>
+            <p class="about_paragraph">Todo lo necesario y obligatorio de CSS, Flexbox, Grid, Posicionamiento, Animaciones, Box y más.</p>   
+            <div class="about_main">
+                <article class="about_iconos">
+                    <img src="img/Shape 32.png" alt="" class="about_iconos">
+                    <h2 class="title">CSS layout</h2>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste consectetur expedita eligendi, blanditiis provident ad quod odio dolorem, molestias laudantium voluptates a asperiores recusandae dolorum enim. Repellendus, ratione. Eos!</p>
+                </article>
+
+                <article class="about_iconos">
+                    <img src="img/CSS 2.PNG" alt="" class="about_iconos" width=35>
+                    <h2 class="title">CSS layout</h2>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste consectetur expedita eligendi, blanditiis provident ad quod odio dolorem, molestias laudantium voluptates a asperiores recusandae dolorum enim. Repellendus, ratione. Eos!</p>
+                </article>
+
+                <article class="about_iconos">
+                    <img src="img/Imagens CSS1.PNG" alt="" class="about_iconos" width=32>
+                    <h2 class="title">CSS layout</h2>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste consectetur expedita eligendi, blanditiis provident ad quod odio dolorem, molestias laudantium voluptates a asperiores recusandae dolorum enim. Repellendus, ratione. Eos!</p>
+                </article>
+            </div>
+        </section>
+            <section class="knowledge">
+                    <div class="knowledge_container">
+                        <div class="knowlegege_texto">
+                            <h2 class="subtitle"> Curso complteo de CSS3, !Domina css por siempre¡</h2>
+                            <p class="knowledge_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quo nulla quisquam assumenda possimus facere magni rem debitis quam itaque enim vero molestiae ab dolorum, vitae earum obcaecati quas perferendis.</p>
+                            <a href="" class="cta2">Entrar al Curso</a>
+                        </div>
+                        <figure class="knowledge_picture">
+                            <img src="img/Tecno1.jpg" alt="" class="knowledge_img" width="1000">
+                        </figure>
+                    </div>
+            </section>
+            <section>
+            </section>
+            <section class="price_container">
+                <h2 class="subtitle">Obtener el Plan Perfecto</h2>
+                <div class="price_table">
+                    <div class="price_element">
+                        <p class="price_name">Flexbox</p>
+                        <h3 class="price_price">Free</h3>
+                        <div class="price_items">
+                            <p class="price_features">Flex</p>
+                            <p class="price_features">Layout</p>
+                            <p class="price_features">Responsive</p>
+                            <div>
+                                <a href="" class="price_cta">Empieza Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_element">
+                        <p class="price_name">Grid</p>
+                        <h3 class="price_price">Basic</h3>
+                        <div class="price_items">
+                            <p class="price_features">Grid</p>
+                            <p class="price_features">Layout</p>
+                            <p class="price_features">Responsive</p>
+                            <div>
+                                <a href="" class="price_cta">Empieza Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price_element">
+                        <p class="price_name">Advanced</p>
+                        <h3 class="price_price">Pro</h3>
+                        <div class="price_items">
+                            <p class="price_features">Flex</p>
+                            <p class="price_features">Grid</p>
+                            <p class="price_features">Responsive</p>
+                            <div>
+                                <a href="" class="price_cta">Empieza Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+</body>
+</html>
